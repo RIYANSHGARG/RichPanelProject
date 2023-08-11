@@ -14,7 +14,7 @@
 
         const auth = firebase.auth();
         const promise = auth.createUserWithEmailAndPassword(email, password).then(user => {
-            if (user !== null) window.location.href = "./Authentication.html";
+            if (user !== null) window.location.href = "./index.html";
         }).catch(err => {
             alert(err.message);
         });
